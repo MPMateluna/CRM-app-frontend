@@ -144,7 +144,7 @@ const productSlice = createSlice({
     CALC_CATEGORY(state, action) {
       const products = action.payload;
       const array = [];
-      products.map((item) => {
+      Object.keys(products).map((item) => {
         const { category } = item;
 console.log(products)
         return array.push(category);
